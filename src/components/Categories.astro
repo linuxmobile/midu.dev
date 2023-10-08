@@ -8,9 +8,9 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 
 {
   tags.map((tag) => (
-    <a href={`/tags/${tag}`} class="flex items-center justify-center gap-x-2 bg-midu-600 border-[1px] border-midu-500 p-2 rounded-full">
+    <a href={`/tags/${tag}`} class="flex items-center justify-center gap-x-2 dark:bg-midu-600 bg-midu-400 border-[1px] border-midu-500 p-2 rounded-full transition-colors duration-200 ease-in-out">
       <Icon name={tag} class="w-6 h-6 rounded-full" />
-      <span class="text-sm capitalize">{tag}</span>
+      <span class="text-sm capitalize ">{tag}</span>
     </a>
   ))
 }

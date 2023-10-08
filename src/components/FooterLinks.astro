@@ -5,7 +5,7 @@ import footerLinks from "@data/footerlinks.json";
 {
   footerLinks.footer.map((categoria) => (
     <div class="flex flex-col items-start justify-start w-fit gap-1">
-      <h3 class="font-bold text-md pb-1">{categoria.title}</h3>
+      <h3 class="font-bold text-md pb-1 text-midu-50">{categoria.title}</h3>
       {categoria.items.map((item) => (
         <a href={item.url} class="text-md text-midu-50 hover:text-midu-200">
           {item.name}
