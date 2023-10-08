@@ -43,15 +43,15 @@ const isLive = () => {
 };
 ---
 
-<li class="bg-midu-600 px-6 py-4 rounded-lg min-w-[42rem] max-w-2xl">
-  <time class="text-xs font-bold capitalize"
+<li class="dark:bg-midu-600 bg-midu-100 px-6 py-4 rounded-lg min-w-[42rem] max-w-2xl">
+  <time class="text-xs font-bold capitalize dark:text-midu-50"
     >{fullDate} - {startTimeFormated} - {endTimeFormated}</time
   >
   <span class="">{isLive}</span>
   <h3
-    class="text-lg font-extrabold text-midu-50 [text-wrap:balance] leading-snug"
+    class="text-lg font-extrabold dark:text-midu-50 [text-wrap:balance] leading-snug"
   >
     {title}
   </h3>
-  <p class="text-sm text-midu-50/60 [text-wrap:balance] pt-2">{description}</p>
+  <p class="text-sm dark:text-midu-50/60 text-midu-800/60 [text-wrap:balance] pt-2">{description}</p>
 </li>

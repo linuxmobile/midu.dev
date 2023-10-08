@@ -18,13 +18,13 @@ const fullDate = date.toLocaleDateString("es", {
 ---
 
 <li
-  class="h-28 flex items-center justify-start bg-transparent py-3 px-6 rounded-xl hover:bg-midu-600"
+  class="h-28 flex items-center justify-start bg-transparent py-3 px-6 rounded-xl dark:hover:bg-midu-600 hover:bg-midu-400"
 >
   <a href={url} class="flex items-center justify-center gap-4">
     <Icon name={tags} class="w-14 h-14 rounded-full" />
     <div class="flex flex-col items-start justify-between gap-3 max-w-sm">
       <h2 class="text-lg font-extrabold">{title}</h2>
-      <p class="text-xs font-medium text-midu-50/60">{fullDate}</p>
+      <p class="text-xs font-medium">{fullDate}</p>
     </div>
   </a>
 </li>
